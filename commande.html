@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fati Designer - Commande</title>
+    <link rel="stylesheet" href="css/commande.css">
+    <script src="jss/commande.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Fati Designer</h1>
+        <h2>Créations Digitales & Services IA</h2>
+        <p>Votre vision, notre création.</p>
+        <div class="options">
+       <button type="button" id="modeBtn">🌙 Mode sombre</button>
+       <button type="button" id="langBtn">🌐 العربية</button>
+</div>
+    </header>
+    <!-- menu de navigation-->
+    <nav>
+        <ul>
+            <li><a href="page1.html">Accueil</a></li>
+            <li><a href="services.html">Nos Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="commande.html">Commande</a></li>
+        </ul>
+    </nav>
+    <!-- contenu principal -->
+    <main>
+        <section id="bienvenue">
+            <h2>Passer une commande</h2>
+            <p>
+                Vous avez choisi un service ?
+                Remplissez le formulaire ci-dessous pour nous envoyer votre demande.
+            </p>
+        </section>
+        <!-- formulaire  -->
+        <section id="commande">
+            <h2>Formulaire de commande</h2>
+            <form id="formCommande">
+                <!-- non et prenom -->
+                <label for="nom">Nom et prénom <span class="obligatoire">*</span>: </label>
+                <input type="text" id="nom" name="nom"
+                placeholder="Entrez votre nom et prénom" required>
+                <!-- adress -->
+                <label for="adresse">Adresse <span class="obligatoire">*</span>:</label>
+                <input type="text" id="adresse" name="adresse"
+                placeholder="Entrez votre adresse" required>
+                <!-- email -->
+               <label for="email">Adresse e-mail :</label>
+               <input type="email" id="email" name="email"placeholder="Entrez votre adresse e-mail" required>
+
+    <!-- tel -->
+    <label for="telephone">Numéro de téléphone <span class="obligatoire">*</span>:</label>
+    <input type="tel" id="telephone" name="telephone"placeholder="Entrez votre numéro de téléphone" required>
+    <!--choix des services -->
+    <label for="service">Choisissez un service <span class="obligatoire">*</span>:</label>
+    <select id="service" name="service" required>
+        <option value="">-- Choisir un service --</option>
+        <option value="CV Professionnel">CV Professionnel</option>
+        <option value="Logo & Branding">Logo & Branding</option>
+        <option value="Affiches & Flyers">Affiches & Flyers</option>
+        <option value="Certificats & Diplômes">Certificats & Diplômes</option>
+        <option value="Aide aux devoirs & projets">Aide aux devoirs & projets</option>
+        <option value="Cartes de visite">Cartes de visite</option>
+        <option value="Stickers personnalisés">Stickers personnalisés</option>
+        <option value="Rapports & Mémoires">Rapports & Mémoires</option>
+        <option value="Présentations PowerPoint">Présentations PowerPoint</option>
+        <option value="Invitations spéciales">Invitations spéciales</option>
+    </select>
+    <!-- description -->
+    <label for="description">Description du projet <span class="obligatoire">*</span>:</label>
+    <textarea id="description" name="description"
+        rows="5" placeholder="Décrivez votre commande..." required></textarea>
+    <!-- date -->
+    <label for="date">Date de livraison souhaitée <span class="obligatoire">*</span>:</label>
+    <input type="date" id="date" name="date" required>
+    <!-- notes -->
+    <label for="notes">Autres remarques :</label>
+    <textarea id="notes" name="notes"
+        rows="3" placeholder="Vos remarques (facultatif)..."></textarea>
+    <!-- btn -->
+    <div class="boutons">
+        <button type="submit">Envoyer la commande</button>
+        <button type="reset">Réinitialiser</button>
+    </div>
+    <p id="message"></p>
+    </form> 
+      </section>
+        <!-- contact -->
+        <section id="contact">
+            <h2>Besoin d'informations ?</h2>
+            <p>Téléphone : 92 527 202</p>
+            <p>Nous sommes à votre disposition pour répondre à vos questions.</p>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>© 2026 Fati Designer</p>
+        <p>Votre vision, notre création.</p>
+    </footer>
+</body>
+</html>

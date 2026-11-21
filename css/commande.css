@@ -1,0 +1,207 @@
+/* general */
+body {
+    background-color: #F8F5EF;
+    color: #292929;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+/* header */
+header {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 2px solid #C6A052;
+}
+header h1 {
+    color: #C6A052;
+    font-size: 35px;
+}
+header h2 {
+    color: #292929;
+    font-size: 20px;
+}
+header p {
+    color: #A88743;
+    font-style: italic;
+}
+/* navigation*/
+nav {
+    background-color: #292929;
+    padding: 15px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 0;
+    padding: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #D6B65D;
+    text-decoration: underline;
+}
+/* sections */
+section {
+    background-color: white;
+    margin: 25px;
+    padding: 25px;
+    border: 1px solid #E8DFC9;
+    border-radius: 10px;
+}
+section h2 {
+    color: #B58A24;
+    text-align: center;
+}
+/* formulaire*/
+#commande {
+    max-width: 650px;
+    margin: 25px auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+form label {
+    font-weight: bold;
+    color: #292929;
+}
+form input,
+form select,
+form textarea {
+    padding: 12px;
+    border: 1px solid #C6A052;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid #B58A24;
+}
+form textarea {
+    resize: vertical;
+}
+/* btns */
+.boutons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.boutons button {
+    background-color: #B58A24;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boutons button:hover {
+    background-color: #292929;
+    color: #D6B65D;
+}
+/* msg */
+#message {
+    color: #B58A24;
+    text-align: center;
+    font-weight: bold;
+}
+/* contact */
+#contact {
+    text-align: center;
+}
+/* footer*/
+footer {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CHAMPS OBLIGATOIRES */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+/* formulaire */
+form label {
+    margin-top: 8px;
+}
+/* champs obligatoire */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid #B58A24;
+}
+/* etoile de champs obligatoire */
+.obligatoire {
+    color: red;
+    font-weight: bold;
+}
+/* boutons mode et langue */
+.options {
+    text-align: center;
+    margin-top: 15px;
+}
+.options button {
+    background-color: #B58A24;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.options button:hover {
+    background-color: #292929;
+    color: #D6B65D;
+}
+/* mode sombre */
+body.dark {
+    background-color: #1E1E1E;
+    color: white;
+}
+body.dark header {
+    background-color: #292929;
+}
+body.dark header h2 {
+    color: white;
+}
+
+body.dark section {
+    background-color: #333333;
+    border-color: #B58A24;
+    color: white;
+}
+body.dark section h2 {
+    color: #D6B65D;
+}
+body.dark form label {
+    color: white;
+}
+body.dark form input,
+body.dark form select,
+body.dark form textarea {
+    background-color: #444444;
+    color: white;
+    border-color: #B58A24;
+}
+body.dark #contact p {
+    color: white;
+}
+body.dark footer {
+    background-color: #111111;
+}
