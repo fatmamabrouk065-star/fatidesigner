@@ -7,23 +7,6 @@ body {
     position: relative;
     isolation: isolate;
 }
-/* logo en arriere plan */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/logo.png.jpeg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 350px;
-    opacity: 0.08;
-    transform: rotate(-20deg);
-    z-index: -1;
-    pointer-events: none;
-}
 /* header */
 header {
     text-align: center;
@@ -131,13 +114,11 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
 /* boutons mode et langue */
 .options {
     text-align: center;
     margin-top: 15px;
 }
-
 .options button {
     background-color: #B58A24;
     color: white;
@@ -148,12 +129,10 @@ footer {
     cursor: pointer;
     font-weight: bold;
 }
-
 .options button:hover {
     background-color: #292929;
     color: #D6B65D;
 }
-
 /* mode sombre */
 body.dark {
     background-color: #1E1E1E;
