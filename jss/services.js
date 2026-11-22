@@ -39,13 +39,13 @@ const nomsServicesAr = [
     "دعوات خاصة"
 ];
 /* commander un service */
-boutons.forEach(function(bouton, index) {
+boutons.forEach(function(bouton, i) {
 
     if (bouton) {
         bouton.addEventListener("click", function() {
 
             window.location.href =
-                "commande.html?service=" + (index + 1);
+                "commande.html?service=" + (i + 1);
 
         });
     }
@@ -69,7 +69,6 @@ if (modeBtn) {
 /* traduction francais et arabe */
 const langBtn = document.querySelector("#langBtn");
 let langue = "fr";
-
 if (langBtn) {
     langBtn.addEventListener("click", function() {
 
@@ -89,24 +88,19 @@ if (langBtn) {
 
             document.querySelector("header p").textContent =
                 "رؤيتكم، إبداعنا.";
-
             /* navigation */
             liens[0].textContent = "الرئيسية";
             liens[1].textContent = "خدماتنا";
             liens[2].textContent = "أعمالنا";
             liens[3].textContent = "الطلبات";
-
             /* bienvenue */
             document.querySelector("#bienvenue h2").textContent =
                 "خدماتنا";
-
             document.querySelector("#bienvenue p").textContent =
                 "اكتشفوا خدماتنا المختلفة في مجال الإبداع الرقمي. نقدم حلولا مخصصة لتلبية احتياجاتكم.";
-
             /* titre services */
             document.querySelector("#services h2").textContent =
                 "خدماتنا المختلفة";
-
             /* descriptions en arabe */
             const descriptionsAr = [
                 "إنشاء سير ذاتية عصرية واحترافية لإبراز مؤهلاتكم.",
